@@ -1,0 +1,248 @@
+html {
+	/* min-width: 250px; */
+	max-width: 1350px;
+	margin: 0 auto;
+}
+body {
+	margin: 0 auto;
+	background-color: #ec8f5e;
+}
+
+/* the shoppingcart modal style */
+dialog {
+	border: none;
+	padding: 1rem;
+	background-color: #f1eb90;
+	width: 80%;
+	font-size: 1rem;
+	border-radius: 4px;
+}
+
+.cart-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+	border-bottom: 1px solid rgb(12, 12, 12);
+	text-align: center;
+}
+.counter {
+	display: flex;
+	justify-content: center;
+}
+.counter button,
+.counter input {
+	font-size: 1rem;
+	cursor: pointer;
+}
+.counter input {
+	width: 30px;
+	text-align: center;
+}
+
+.dialog-control {
+	margin-top: 1rem;
+}
+.dialog-control button {
+	font-size: 1rem;
+	cursor: pointer;
+}
+.dialog-close-btn {
+	border-radius: 8px;
+	color: black;
+	padding: 0.6rem;
+	border-radius: 8px;
+}
+.dialog-close-btn:hover {
+	background-color: orangered;
+}
+.confirm-order {
+	background-color: orange;
+	padding: 0.6rem;
+	margin-left: 1rem;
+	border-radius: 8px;
+}
+.confirm-order:hover {
+	background-color: #26bd3d;
+}
+
+.dialog-backdrop {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-backdrop.show {
+	display: block;
+}
+
+.cart-content-total {
+	margin: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.4rem;
+	border-bottom: 1px solid rgb(12, 12, 12);
+	text-align: center;
+}
+
+.header {
+	background-color: rgba(222, 222, 222, 0.8);
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.header-wrapper {
+	padding: 1rem 2rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(239, 233, 233, 0.871);
+	opacity: 1;
+}
+.header p {
+	font-size: 1.4rem;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.cartBtn {
+	/* border: 1px black solid; */
+	height: 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+.cartBtn img {
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: relative;
+	top: 8px;
+}
+
+.header-background {
+	background-image: url("https://www.fbgcdn.com/pictures/e47a8445-c0f7-4ac0-92a3-fd7409aae568_d2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: fit;
+	height: 30vh;
+}
+.count {
+	background-color: rgb(206, 43, 43);
+	border-radius: 100%;
+	text-align: center;
+	padding: 0.2rem 0.4rem;
+	position: absolute;
+	top: 0;
+	right: -8px;
+}
+
+/* promotion */
+
+.promotion {
+	padding: 1.6rem;
+	color: rgb(255, 255, 255);
+	font-size: 1.4rem;
+}
+.promotion-wrapper {
+	background-image: url(../../assets/images/sushistar-8-1440x1080.jpg);
+	background-repeat: no-repeat;
+	height: 30vh;
+	background-size: cover; /* set to 100% when the screem larger */
+	object-fit: contain;
+}
+.promotion-focus {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 1rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* menu */
+
+.menu-card-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+	justify-content: center;
+}
+.menu-card {
+	text-transform: capitalize;
+	background-color: #f3b664;
+	padding: 1rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 8px;
+}
+.menu-card button {
+	background-color: #f1eb90;
+	padding: 0.6rem;
+	border-radius: 6px;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+}
+.menu-card button:hover {
+	background-color: #9fbb73;
+	color: black;
+	cursor: pointer;
+}
+
+.menu-card-wrapper img {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+}
+
+/* footer */
+
+footer {
+	padding: 2rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+/* media query */
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 18px;
+	}
+	.menu-card-wrapper {
+		gap: 1rem;
+	}
+	.menu-card {
+		width: 46%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+	.menu-card {
+		width: 30%;
+	}
+	dialog {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	html {
+		font-size: 22px;
+	}
+	.menu-card {
+		width: 23%;
+	}
+	dialog {
+		width: 50%;
+	}
+}

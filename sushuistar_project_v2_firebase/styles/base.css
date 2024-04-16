@@ -1,0 +1,63 @@
+/* reset the default css  */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: #333;
+	font-family: "Istok Web", sans-serif;
+	font-size: 16px;
+}
+
+img,
+video {
+	display: block;
+}
+
+textarea {
+	resize: none;
+}
+
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+i {
+	display: inline-block;
+}

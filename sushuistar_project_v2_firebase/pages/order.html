@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+		<link rel="icon" href="../assets/images/logo-122x73.png" />
+		<link rel="stylesheet" href="../styles/base.css" />
+		<link rel="stylesheet" href="./orderstyles/main.css" />
+		<title>sushi star</title>
+	</head>
+	<body>
+		<!-- heading -->
+		<header class="header">
+			<div class="header-wrapper">
+				<a href="../index.html" class="logoName">sushi stars kitchener</a>
+				<div class="cartBtn">
+					<img src="../assets/images/cart.svg" alt="shopping cart" />
+					<button class="count">0</button>
+				</div>
+			</div>
+			<div class="header-background"></div>
+		</header>
+
+		<!-- shopping cart modal -->
+
+		<dialog class="shopingCart">
+			<h2>Your Cart:</h2>
+			<ul>
+				<!--<li class="cart-content" data-key='p01'>
+					 <p class="cart-product-name">${name}</p>
+					<p>$2.22</p>
+					<p style="display: none">p01</p>
+					<div class="counter">
+						<button class='minus'>-</button>
+						<input type="text" readonly value="0" />
+						<button class='plus'>+</button>
+					</div> 
+				</li>-->
+			</ul>
+			<div class="dialog-control">
+				<button class="dialog-close-btn">Close</button>
+				<!-- <button class="confirm-order">Confirm Order</button> -->
+			</div>
+		</dialog>
+		<!-- dialog backdrop -->
+		<div id="dialogBackdrop" class="dialog-backdrop"></div>
+
+		<main>
+			<!-- promotion banner -->
+			<section class="promotion">
+				<div class="promotion-wrapper">
+					<div class="promotion-focus">
+						<h2>10% off your pickup order</h2>
+						<p>Cash Only</p>
+					</div>
+				</div>
+			</section>
+			<!-- menu -->
+			<section class="menu">
+				<ul class="menu-card-wrapper">
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/20191122151919-1440x1080.jpg" media="(min-width: 800px)" alt="selmon" />
+							<img src="../assets/images/20191122151919-1440x1080-800x600.jpg" alt="selmon" />
+						</picture>
+						<p>Fresh Selmon</p>
+						<p>price: $3.55</p>
+						<p style="display: none">id: p01</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/20191122152847-1440x1080.jpg" media="(min-width: 800px)" alt="Sashimi" />
+							<img src="../assets/images/20191122152847-1440x1080-800x600.jpg" alt="Sashimi" />
+						</picture>
+						<p>Fresh Sashimi</p>
+						<p>price: $3.55</p>
+						<p style="display: none">id: p02</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/20191122152900-1440x1080.jpg" media="(min-width: 800px)" alt="sushi" />
+							<img src="../assets/images/20191122152900-1440x1080-800x600.jpg" alt="sushi" />
+						</picture>
+						<p>Fresh sushi</p>
+						<p>price: $3.55</p>
+						<p style="display: none">id: p03</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/20191122152942-1080x1080.jpg" media="(min-width: 800px)" alt="sushi combo" />
+							<img src="../assets/images/20191122152942-1080x1080-800x800.jpg" alt="sushi combo" />
+						</picture>
+						<p>sushi combo</p>
+						<p>price: $9.55</p>
+						<p style="display: none">id: p04</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/20191122153005-960x960.jpg" media="(min-width: 800px)" alt="Sashimi combo" />
+							<img src="../assets/images/20191122153005-960x960-800x800.jpg" alt="Sashimi combo" />
+						</picture>
+						<p>Sashimi combo</p>
+						<p>price: $19.55</p>
+						<p style="display: none">id: p04</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/dsc02925-2000x1333.jpg" media="(min-width: 800px)" alt="Steak" />
+							<img src="../assets/images/dsc02925-2000x1333-800x533.jpg" alt="Steak" />
+						</picture>
+						<p>Steak</p>
+						<p>price: $9.55</p>
+						<p style="display: none">id: p05</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/dsc02926-2000x1333.jpg" media="(min-width: 800px)" alt="salad" />
+							<img src="../assets/images/dsc02926-2000x1333-800x533.jpg" alt="salad" />
+						</picture>
+						<p>salad</p>
+						<p>price: $4.55</p>
+						<p style="display: none">id: p06</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/dsc02927-2000x1333.jpg" media="(min-width: 800px)" alt="tenpura" />
+							<img src="../assets/images/dsc02927-2000x1333-800x533.jpg" alt="tenpura" />
+						</picture>
+						<p>tenpura</p>
+						<p>price: $4.97</p>
+						<p style="display: none">id: p07</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/dsc02929-2000x1333.jpg" media="(min-width: 800px)" alt="fry salmon" />
+							<img src="../assets/images/dsc02929-2000x1333-800x533.jpg" alt="fry salmon" />
+						</picture>
+						<p>fry salmon</p>
+						<p>price: $6.97</p>
+						<p style="display: none">id: p08</p>
+						<button>Add to cart</button>
+					</li>
+					<li class="menu-card">
+						<picture>
+							<source srcset="../assets/images/dsc02931-2000x1333.jpg" media="(min-width: 800px)" alt="fry potato" />
+							<img src="../assets/images/dsc02931-2000x1333-800x533.jpg" alt="fry potato" />
+						</picture>
+						<p>fry potato</p>
+						<p>price: $4.97</p>
+						<p style="display: none">id: p09</p>
+						<button>Add to cart</button>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<hr />
+		<footer>
+			<p>&copy; Copyright 2019 Sushi Star - All Rights Reserved</p>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="./orderJS/dummyData.js"></script>
+		<script src="./orderJS/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,292 @@
+html {
+	/* min-width: 250px; */
+	max-width: 1400px;
+	margin: 0 auto;
+}
+body {
+	margin: 0 auto;
+}
+
+/* nav bar styling */
+.nav-bar {
+	position: fixed;
+	margin: 0 auto;
+	width: 100vw;
+	max-width: 1400px;
+	padding: 1rem;
+	background-color: rgb(64, 70, 78);
+	z-index: 10;
+}
+
+.nav-home-link-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-home-link > img {
+	width: 50%;
+	animation: nav-logo 6s linear infinite;
+}
+
+@keyframes nav-logo {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+.nav-button {
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+}
+
+.nav-button > span {
+	display: block;
+	border-top: 4px solid white;
+	width: 40px;
+	height: 10px;
+}
+
+.nav-button.active span {
+	border-color: orange;
+}
+
+.nav-link-list {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	background-color: rgb(64, 70, 78);
+	color: aliceblue;
+	text-align: center;
+	transition: opacity 1s ease-in-out, height 1s ease-in-out;
+}
+.nav-link-list-large-screen {
+	display: none;
+}
+
+.nav-link-list.active {
+	opacity: 1;
+	height: auto;
+}
+
+.nav-link-list > li {
+	padding: 0.6rem;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.nav-link-list > li > button:hover,
+.nav-link-list > li > a:hover {
+	color: orange;
+	border-bottom: 1px solid orange;
+}
+
+.nav-link-list > li > button,
+.nav-link-list > li > a {
+	color: aliceblue;
+	font-size: 1rem;
+}
+
+/* welcome page */
+.welcome {
+	width: 100%;
+	height: 95vh;
+	background-image: url("https://azumisushi.ca/wp-content/uploads/2017/10/Monster_DSC01650.jpg");
+	background-size: cover;
+}
+.welcome div {
+	height: 99vh;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+.welcome a {
+	display: block;
+	position: relative;
+	width: 75%;
+	top: 45%;
+	padding: 1rem;
+	text-align: center;
+	margin: 0 auto;
+	color: orange;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+.welcome-animation {
+	animation: welcome-animate infinite 6s;
+}
+@keyframes welcome-animate {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* video section */
+
+.video {
+	width: 100%;
+	height: 55vh;
+	background-image: -webkit-linear-gradient(#111, #d9cbcb);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.iframe-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 75%; /* 16:9 Aspect Ratio */
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding: 2rem;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* about section */
+.about {
+	background-color: rgb(61, 64, 67);
+	color: azure;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+.about-heading {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: aliceblue;
+	padding: 2rem 0 0 2rem;
+}
+
+.about article {
+	padding: 2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+/* gallery section  */
+
+.gallery {
+	background-color: #111;
+	padding: 4rem 1.4rem;
+}
+
+.images-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1.6rem;
+}
+
+.images-wrapper img,
+.images-wrapper source {
+	width: 100%;
+}
+
+/* suggestion section */
+.suggestion {
+	background-image: -webkit-linear-gradient(#111, #3b3939);
+	color: rgb(255, 255, 255);
+	padding: 2.6rem;
+}
+.suggestion-heading {
+	font-size: 1.8rem;
+}
+
+.suggestion form {
+	margin-top: 2rem;
+
+	padding: 1rem 0 1rem 0;
+}
+.suggestion form label {
+	margin-bottom: 1rem;
+}
+.input-wrapper {
+	margin-bottom: 1rem;
+}
+.input-wrapper input {
+	line-height: 1.1rem;
+}
+
+.text-input {
+	background-color: beige;
+}
+.comments-label {
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+textarea {
+	width: 80%;
+	height: 10rem;
+}
+.submit-btn,
+.reset-btn {
+	text-transform: uppercase;
+	padding: 0.4rem;
+	border-radius: 6px;
+}
+.submit-btn {
+	background-color: rgb(236, 232, 225);
+}
+.reset-btn {
+	color: aliceblue;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+	background-color: orange;
+}
+.reset-btn:hover {
+	color: black;
+}
+
+footer {
+	background-image: -webkit-linear-gradient(#3b3939, #5e5e5e);
+	color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 2rem;
+	text-align: center;
+}
+
+.footer-hours,
+.footer-address,
+.footer-contact,
+.footer-copyright {
+	line-height: 2rem;
+	margin-bottom: 2rem;
+	padding-top: 2rem;
+}
+footer h4 {
+	margin-bottom: 1.8rem;
+}
+
+.loading {
+	margin-top: 2rem;
+	text-align: center;
+	padding: 1rem;
+}

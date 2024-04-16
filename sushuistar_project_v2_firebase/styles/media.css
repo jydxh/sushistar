@@ -1,0 +1,128 @@
+/* for tablet */
+@media only screen and (min-width: 576px) {
+	html {
+		font-size: 18px;
+	}
+	.nav-link-list-large-screen {
+		display: none;
+	}
+	.images-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 20px;
+	}
+	.nav-home-link img {
+		width: 75%;
+	}
+	.nav-link-list-large-screen {
+		display: none;
+	}
+	.images-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0.8rem;
+	}
+
+	.video {
+		height: 80vh;
+	}
+
+	.input-wrapper {
+		display: block;
+		margin-right: 2rem;
+	}
+	.from-flex-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.suggestion {
+		text-align: center;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+	.footer-hours,
+	.footer-address,
+	.footer-contact,
+	.footer-copyright {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+
+	.welcome a {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	html {
+		font-size: 22px;
+	}
+	.nav-home-link-wrapper {
+		width: 20%;
+	}
+	.nav-home-link img {
+		width: 100%;
+	}
+	.nav-bar {
+		display: flex;
+		justify-content: space-around;
+	}
+	.nav-button {
+		display: none;
+	}
+	.nav-link-list {
+		display: none;
+	}
+	.nav-link-list-large-screen {
+		display: block;
+		opacity: 1;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.nav-link-list-large-screen > li {
+		padding: 0.6rem;
+		width: 100px;
+		margin: 0 auto;
+	}
+
+	.nav-link-list-large-screen > li > button:hover,
+	.nav-link-list-large-screen > li > a:hover {
+		color: orange;
+		border-bottom: 1px solid orange;
+	}
+
+	.nav-link-list-large-screen > li > button,
+	.nav-link-list-large-screen > li > a {
+		color: aliceblue;
+		font-size: 1rem;
+	}
+
+	.video-about-wrapper {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		background-image: -webkit-linear-gradient(#40464e, #111111);
+	}
+	.video {
+		width: 50%;
+		background-image: none;
+	}
+	.about {
+		width: 50%;
+		background-color: transparent;
+	}
+}
